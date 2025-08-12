@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console.log</title>
+</head>
+<body>
+    <script >
+        
+        // function arithmethmeticOperator (a,b){
+        //     const sum= a+b;
+        //     const sub= a-b;
+        //     const mul= a*b;
+        //     const div= a/b;
+        //     const mod= a%b;
+
+        //     return {
+        //         sum: sum,
+        //         sub: sub,
+        //         mul: mul,
+        //         div: div,
+        //         mod: mod
+        //     };
+        // }
+
+        // arithmethmeticOperator(10, 5);
+
+        // let result = arithmethmeticOperator(10, 5);
+        // console.log(result)
+         
+        //Assignment operators
+
+      function assignmentOperator(x){
+        x +=5;
+        console.log(x);
+        x -=2;
+        console.log(x);
+        x *=3;
+        console.log(x);
+      }
+        assignmentOperator(10);
+
+
+
+        function comparisonOperator(a, b) {
+            console.log(a == b); // equal
+            console.log(a != b); // not equal
+            console.log(a > b);  // greater than
+            console.log(a < b);  // less than
+            console.log(a >= b); // greater than or equal to
+            console.log(a <= b); // less than or equal to
+        }
+
+        comparisonOperator(10, 5);
+
+
+
+        function logicalOperator(isSunny, isWeekend) {
+            console.log(isSunny && isWeekend); // logical AND
+            console.log(isSunny || isWeekend); // logical OR    
+               // logical NOT
+        }
+        logicalOperator(true, false);
+
+
+
+        function conditionalOperator(a) {
+            if(a>=0){
+
+             console.log("Positive number");   
+            }
+            else if(a<0){
+                console.log("Negative number");
+            }
+            else{
+                console.log("Zero");
+            }
+        }
+
+        conditionalOperator(-5);
+       
+        function bitwiseOperator(a, b) {
+            console.log(a & b); // bitwise AND
+            console.log(a | b); // bitwise OR
+            console.log(a ^ b); // bitwise XOR
+            console.log(~a);    // bitwise NOT
+            console.log(a << 1); // left shift
+            console.log(a >> 1); // right shift
+        }
+        bitwiseOperator(5, 3);
+
+    </script>
+    
+</body>
+</html>
