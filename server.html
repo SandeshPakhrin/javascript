@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .calculator {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 260px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    input {
+      width: 100px;
+      padding: 8px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: center;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #resultBox {
+      margin-top: 15px;
+      padding: 10px;
+      border: 2px solid #333;
+      width: 200px;
+      min-height: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h2>Mini Calculator</h2>
+  <input id="num1" type="number" placeholder="First number">
+  <input id="num2" type="number" placeholder="Second number"><br><br>
+
+  <button onclick="calc('+')">+</button>
+  <button onclick="calc('-')">-</button>
+  <button onclick="calc('*')">×</button>
+  <button onclick="calc('/')">÷</button>
+
+  <div id="resultBox">Result will show here</div>
+
+  <script>
+    function calc(op) {
+      let a = parseFloat(document.getElementById('num1').value);
+      let b = parseFloat(document.getElementById('num2').value);
+      let box = document.getElementById('resultBox');
+
+      if (isNaN(a) || isNaN(b)) {
+        box.innerText = "Enter both numbers!";
+        return;
+      }
+
+      let res;
+      if (op === '+') res = a + b;
+      if (op === '-') res = a - b;
+      if (op === '*') res = a * b;
+      if (op === '/') res = b !== 0 ? a / b : "Undefined (÷0)";
+
+      box.innerText =  `${res}`;
+    }
+    </script>
+
+    
+</body>
+</html>
