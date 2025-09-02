@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"> <p id="paragraph" class="text">Original Text</p>
+    <button id="changeTextBtn">Change Text</button>
+    </div>
+    <script>
+        const button = document.getElementById('changeTextBtn');
+        const pElement = document.getElementById('paragraph');
+        const divElement = document.getElementById('container');
+
+        button.addEventListener('click',()=>{
+            pElement.textContent='Text has been changed!';
+            pElement.className='new-class';
+            divElement.id='new-container-id';
+        });
+    </script>
+</body>
+</html>

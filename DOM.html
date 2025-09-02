@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="container">
+        <p id="paragraph">This is a <span id="highlighted">Highlighted text</span></p>
+    </div>
+    <script>
+        // understanding DOM
+        const divElement = document.getElementById("container");
+        const pElement = document.getElementsByTagName('p')[0];
+        const spanElement = document.querySelector('#highlight');
+        console.log("Div Element:", divElement);
+        console.log("Paragraph Element:",pElement);
+        console.log("Span Element:",spanElement);
+    </script>
+</body>
+</html>

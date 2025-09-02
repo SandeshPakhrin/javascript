@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+    const calculateIngredientCost1 = (pricePerUnit,quantityUsed)=>{
+         
+
+        let totalCost = pricePerUnit*quantityUsed;
+
+        return totalCost;
+    }
+
+
+    let output=calculateIngredientCost1(50,2);
+
+    console.log("The total cost is  " +output)
+
+
+
+    const calculateIngredientCost2 = (pricePerUnit,quantityUsed)=>{
+         
+
+        let totalCost = pricePerUnit*quantityUsed;
+
+        return totalCost;
+    }
+
+
+    let output1=calculateIngredientCost2(75,1.5);
+
+    console.log("The total cost is  " +output1)
+
+
+
+
+    const calculateIngredientCost3 = (pricePerUnit,quantityUsed)=>{
+         
+
+        let totalCost = pricePerUnit*quantityUsed;
+
+        return totalCost;
+    }
+
+
+    let output2=calculateIngredientCost3(99,5);
+
+    console.log("The total cost is  " +output2)
+
+
+
+
+    const final = (calculateIngredientCost1,calculateIngredientCost2,calculateIngredientCost3)=>{
+
+         let total = calculateIngredientCost1 + calculateIngredientCost2 + calculateIngredientCost3;
+
+         return total ;
+
+    }
+
+
+    let finalOutput = final(output,output1,output2)
+
+    console.log("Final cost is "+finalOutput);
+    
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    //    let myArray =[];
+    //     myArray.push("hello",42,true);
+    //     console.log("Length of myArray:",myArray.length);
+
+    //   for(let i = 0;i<myArray.length;i++){
+    //     console.log("Element",i+1,":",myArray[i]);
+    //   }
+
+    // let friuts =["Apple","Banana","Orange","Graphs","Mango"];
+
+    // friuts.push("Pineapple");
+    // console.log(friuts)
+    // friuts.pop();
+    // console.log(friuts);
+    // friuts.unshift("Strawberry");
+    // console.log(friuts)
+    // friuts.shift();
+    // console.log("Modified fruits array:",friuts)
+      
+//     let num =[1,3,5,7,9];
+//     num.forEach(function(num1){
+//        console.log(num1)
+//     })
+    
+//     let doubleNum= num.map(function(num1){
+//         return num1*2;
+
+//     })
+//    console.log(doubleNum)
+//     let gtFive = num.filter(function(num1){
+//         return num1>5;
+//     })
+//     console.log(gtFive)
+
+
+
+
+    // let matrix = [[1,2,3],[4,5,6],[7,8,9]];
+    // console.log("Element at (2,3):",matrix[1][2]);
+
+    // for(let row=0;row<matrix.length;row++){
+    //     for(let col=0;col<matrix[row].length;col++){
+    //         console.log("Element("+(row+1)+","+(col+1)+"):",matrix[row][col])
+    //     }
+    // }
+
+    
+
+
+    let numArray = [2,4,6,8,10];
+
+    let sum = numArray.reduce(function(acc,num){
+        return acc + num
+    },0)
+  console.log(sum)
+
+  let maxNum = Math.max(...numArray);
+
+  console.log(maxNum)
+  
+  let isExist = numArray.includes(6);
+
+  console.log(isExist)
+
+  let revArray = numArray.reverse();
+  console.log(revArray)
+    </script>
+    
+</body>
+</html>
