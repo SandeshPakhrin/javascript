@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p id="paragraph">This is a paragraph</p>
+        <p id="sParagraph">This is another paragraph</p>
+
+    </div>
+
+    <script>
+        const pElement = document.getElementById('paragraph');
+        const parentElement = pElement.parentElement;
+        console.log('parent element:',parentElement);
+
+        const childElements = parentElement.children;
+        console.log('child elements:',childElements);
+
+        const nextSibiling = pElement.nextElementSibling;
+        if(nextSibiling){
+            console.log('next sibiling:',nextSibiling);
+
+        }
+        else{
+            console.log('no  next sibiling exists');
+        }
+    </script>
+</body>
+</html>
